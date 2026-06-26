@@ -1,6 +1,0 @@
-# To statically link OpenSSL:
- _ssl _ssl.c -I$(SSL_HOME)/include -L$(SSL_HOME)/lib \
-     -l:libssl.a -Wl,--exclude-libs,libssl.a \
-     -l:libcrypto.a -Wl,--exclude-libs,libcrypto.a
- _hashlib _hashopenssl.c -I$(SSL_HOME)/include -L$(SSL_HOME)/lib \
-     -l:libcrypto.a -Wl,--exclude-libs,libcrypto.a
